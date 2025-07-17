@@ -51,6 +51,16 @@ export default {
               En construcción
             </a>
           </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              :class="{ active: activeTab === 'sobreMi' }"
+              href="#"
+              @click.prevent="setTab('sobreMi')"
+            >
+              Sobre mí
+            </a>
+          </li>
         </ul>
 
         <form class="d-flex" @submit.prevent="buscar">
