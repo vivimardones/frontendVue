@@ -140,6 +140,17 @@ export default {
 
       if (!Object.values(this.errors).some((error) => error !== '')) {
         alert('El registro se ha realizado correctamente')
+        // Vaciar los campos
+        this.form.name = ''
+        this.form.email = ''
+        this.form.password = ''
+        this.form.password2 = ''
+
+        // Opcional: limpiar los errores también
+        this.errors.name = ''
+        this.errors.email = ''
+        this.errors.password = ''
+        this.errors.password2 = ''
       }
     },
   },
